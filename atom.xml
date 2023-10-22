@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TheQuteGDH.github.io</id>
     <title>GDH-OSのBlog</title>
-    <updated>2023-10-22T00:32:40.215Z</updated>
+    <updated>2023-10-22T00:41:05.405Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TheQuteGDH.github.io"/>
     <link rel="self" href="https://TheQuteGDH.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2023, GDH-OSのBlog</rights>
     <entry>
         <title type="html"><![CDATA[第一篇文章]]></title>
-        <id>https://TheQuteGDH.github.io/post/TheFirst/</id>
-        <link href="https://TheQuteGDH.github.io/post/TheFirst/">
+        <id>https://TheQuteGDH.github.io/post/DI-YI-PIAN-WEN-ZHANG/</id>
+        <link href="https://TheQuteGDH.github.io/post/DI-YI-PIAN-WEN-ZHANG/">
         </link>
         <updated>2023-10-21T23:47:56.000Z</updated>
         <content type="html"><![CDATA[<p>嗨，我是GDH-OS，这是我搞的第一个博客，花了很长时间去搭建的<br>
