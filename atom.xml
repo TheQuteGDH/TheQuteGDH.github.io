@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TheQuteGDH.github.io</id>
     <title>GDH-OSのBlog</title>
-    <updated>2023-11-05T05:04:52.394Z</updated>
+    <updated>2023-11-05T05:55:07.112Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TheQuteGDH.github.io"/>
     <link rel="self" href="https://TheQuteGDH.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://TheQuteGDH.github.io/images/avatar.png</logo>
     <icon>https://TheQuteGDH.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, GDH-OSのBlog</rights>
+    <entry>
+        <title type="html"><![CDATA[学号点名程序]]></title>
+        <id>https://TheQuteGDH.github.io/post/xue-hao-dian-ming-cheng-xu/</id>
+        <link href="https://TheQuteGDH.github.io/post/xue-hao-dian-ming-cheng-xu/">
+        </link>
+        <updated>2023-11-05T05:39:55.000Z</updated>
+        <content type="html"><![CDATA[<p>做了一个学好点名程序，废话不多说，献上链接：<br>
+蓝奏云https://wwfz.lanzoum.com/iISaz1dtwwmf<br>
+密码fhy4<br>
+最大的特点是它转的数字比较快，防止某些人眼力较好，看出来选哪个<br>
+以下是截图<br>
+<img src="https://TheQuteGDH.github.io/post-images/1699163656098.PNG" alt="" loading="lazy"><br>
+没话说，有其他意见的可以找作者，作者QQ:3604047068</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DeepFrz防破解程序]]></title>
         <id>https://TheQuteGDH.github.io/post/deepfrz-fang-po-jie-cheng-xu/</id>
