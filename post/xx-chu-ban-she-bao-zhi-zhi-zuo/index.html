@@ -1,77 +1,129 @@
+<!DOCTYPE html>
 <html>
-      <head>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
-        <meta charset="utf-8">
-        <meta name="referrer" content="never">
-        <title>XX出版社报纸制作 | GDH-OSのBlog</title>
-        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
-        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://TheQuteGDH.github.io/styles/main.css">
-          <script src="https://TheQuteGDH.github.io/media/scripts/mdui.min.js"></script>
-        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
-        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-        <script src="https://TheQuteGDH.github.io/media/scripts/script.js"></script>
-        <script >hljs.initHighlightingOnLoad();</script>
+  <head>
+    <meta charset="utf-8" >
+
+<title>XX出版社报纸制作 | GDH-OSのBlog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://TheQuteGDH.github.io/favicon.ico?v=1699149626928">
+<link rel="stylesheet" href="https://TheQuteGDH.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="最近我们班的某班主任让我们做一份报纸，无奈，时间较短，发一下成果
+链接：https://wwfz.lanzoum.com/ixTAY1chvybc
+访问码：htdd
+里面的新闻，其实是我和某某某同学一起做的，总共选取了四篇新闻，1篇我的同桌..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://TheQuteGDH.github.io">
+        <img src="https://TheQuteGDH.github.io/images/avatar.png?v=1699149626928" class="site-logo">
+        <h1 class="site-title">GDH-OSのBlog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      青，取之于蓝而青于蓝；冰，水为之而寒于水。
+    </div>
+    <div class="site-footer">
+      
+ | <a class="rss" href="https://TheQuteGDH.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    </head>
-    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
-        <header class="index-img mdui-m-b-3" >
-                          <button class="mdui-btn  mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
-                <ul class="mdui-menu" id="demo-attr-cascade">
-                
-                        <li class="mdui-menu-item">
-                          <a href="/" class="mdui-ripple">首页</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/archives" class="mdui-ripple">归档</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/tags" class="mdui-ripple">标签</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/post/about" class="mdui-ripple">关于</a>
-                        </li>
-                
-                      </ul>
 
-        </header>
-        <div class="mdui-container post">
-                <div class="mdui-row">
-                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
-                         <article class="mdui-shadow-10 mdui-p-a-2 post-list">
-                           <div class="mdui-typo-display-1 mdui-m-b-3">XX出版社报纸制作</div>
-                           <a  class="index-list-biaoqian ">2023-10-22</a>
-                           <div class="mdui-typo mdui-m-t-3 post-neirong"><p>最近我们班的某班主任让我们做一份报纸，无奈，时间较短，发一下成果<br>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">XX出版社报纸制作</h2>
+            <div class="post-date">2023-10-22</div>
+            
+            <div class="post-content" v-pre>
+              <p>最近我们班的某班主任让我们做一份报纸，无奈，时间较短，发一下成果<br>
 链接：https://wwfz.lanzoum.com/ixTAY1chvybc<br>
-访问码：htdd<br>
-里面的新闻，其实是我和某某某同学一起做的，总共选取了四篇新闻，1篇我的同桌找的，其他三篇都是我从不同网站找的，我找的是这个网址：https://www.gk100.com/read_2608562767.htm<br>
-以下是我们选取的新闻内容：<br>
+访问码：htdd</p>
+<p>里面的新闻，其实是我和某某某同学一起做的，总共选取了四篇新闻，1篇我的同桌找的，其他三篇都是我从不同网站找的，我找的是这个网址：https://www.gk100.com/read_2608562767.htm</p>
+<p>以下是我们选取的新闻内容：<br>
 1、俄乌冲突是一个复杂而严重的地缘政治问题，涉及到许多历史、文化和政治因素。作为一个普通人，我希望能够客观地分析这个问题，并表达我的个人看法。<br>
 首先，俄乌冲突的根源可以追溯到苏联解体后的乌克兰独立。乌克兰是一个多民族国家，东部和南部地区有着较多的俄罗斯族人口，而西部和中部地区则更多是乌克兰族人口。这种民族和文化差异导致了乌克兰内部的分歧和矛盾。<br>
 其次，乌克兰的政治走向也是俄乌冲突的一个重要因素。乌克兰在2014年发生了政权更迭，前总统亚努科维奇被推翻，而后来的政府倾向于与欧洲和北约合作，这引起了俄罗斯的不满和担忧。俄罗斯认为乌克兰的政治转向对其国家安全构成了威胁，因此采取了干涉行动。<br>
 第三，乌克兰东部地区的亲俄派和乌克兰政府之间的冲突也是俄乌冲突的重要组成部分。亲俄派认为乌克兰政府对俄罗斯族人口的歧视和压迫，而乌克兰政府则认为亲俄派是俄罗斯的代理人，试图分裂乌克兰。这种内部冲突导致了乌克兰东部地区的局势不稳定，甚至爆发了武装冲突。<br>
 对于俄乌冲突，我认为解决这个问题需要各方的努力和妥协。首先，国际社会应该发挥积极的调解作用，促使各方坐下来进行对话，并寻求和平解决方案。其次，乌克兰政府应该采取措施，保障所有公民的权益和利益，尊重多元文化和民族的存在。同时，俄罗斯也应该尊重乌克兰的主权和领土完整，遵守国际法和国际准则。<br>
-最重要的是，我们作为普通人应该保持客观和理性的态度，不被媒体的宣传和偏见所左右。我们应该尊重各方的观点和立场，努力促进和平与理解。只有通过和平解决问题，才能实现长期的稳定和繁荣。<br>
-2、2023近期时事热点素材1：“心心相融，@未来”，杭州亚运会正式开幕<br>
+最重要的是，我们作为普通人应该保持客观和理性的态度，不被媒体的宣传和偏见所左右。我们应该尊重各方的观点和立场，努力促进和平与理解。只有通过和平解决问题，才能实现长期的稳定和繁荣。</p>
+<p>2、2023近期时事热点素材1：“心心相融，@未来”，杭州亚运会正式开幕<br>
 适用主题：体育竞技、国力强盛</p>
 <p>9月23日晚，万众瞩目的杭州亚运会于杭州奥体中心体育场隆重开幕。本次杭州亚运会是第19届亚运会，也是继1990年北京亚运会、2010年广州亚运会后，中国第三次举办亚洲最高规格的国际综合性体育赛事。<br>
 杭州亚运会从主题口号“心心相融，@未来”，到主题曲《同爱同在》中的歌词“心相融爱相加”，无不承载着亚洲命运共同体的主题。而名字分别为宸宸、琮琮和莲莲的三名机器人吉祥物，组合名为“江南忆”，出自唐朝诗人白居易的名句“江南忆，最忆是杭州”，完美地融合了杭州的历史人文、自然生态和创新基因。<br>
 据了解，本次亚运会共设置了24项竞技性比赛、18项球类比赛、9项对抗性比赛和10项水上比赛，将会诞生481块金牌。运动员人数达到12500多名，报名规模创历届之最。其中，中国亚运代表团成员共1329名，有36位奥运冠军。<br>
 杭州亚运会在呈现出一场赛事盛宴的同时，不仅能让更多中国青年用自信的视角与世界对话、展现青春风采，更能让世界看到一个真实、立体、全面的中国。<br>
-<img src="https://TheQuteGDH.github.io/post-images/1697937792144.webp" alt="" loading="lazy"><br>
-3、023近期时事热点素材2：华为Mate 60系列开售，央视怒赞“争气机”！<br>
+<img src="https://TheQuteGDH.github.io/post-images/1697937792144.webp" alt="" loading="lazy"></p>
+<p>3、023近期时事热点素材2：华为Mate 60系列开售，央视怒赞“争气机”！<br>
 适用主题：自主创新、民族精神</p>
 <p>近期，华为推出的新一代旗舰手机Mate 60 Pro引发了广泛关注，华为门店再现排队盛况，甚至一机难求。<br>
 很多网友称其“争气机”，因为这款手机搭载的麒麟9000S芯片采用了“先进的7nm芯片技术”，代表了中国芯片设计和制造的里程碑。不仅如此，华为Mate 60 Pro还是全球第一款支持卫星通话的大众智能手机。此功能可以在无地面网络覆盖的情况下，让用户通过卫星通信自由接打电话、收发短信，几乎可以无视地域、环境的限制。这不仅是对通信技术无限可能的进一步探索，也是对用户需求深度理解的充分表达，更是华为科技领先实力的突显。<br>
 可以看出，在历经美国四年多的技术打压之下，华为破卡突围，1万多个零部件实现国产化，这说明自主创新大有可为。<br>
 这种突破技术限制而彰显出大国底气的自信，才是让中国人无比自豪、振奋的根本原因。<br>
-<img src="https://TheQuteGDH.github.io/post-images/1697937821385.webp" alt="" loading="lazy"><br>
-4、<br>
+<img src="https://TheQuteGDH.github.io/post-images/1697937821385.webp" alt="" loading="lazy"></p>
+<p>4、<br>
 2023近期时事热点素材3：科技助力，内蒙青年接力创造治沙传奇</p>
 <p>适用主题：青春力量、科技兴国</p>
 <p>30多年前的库布其沙漠腹部地区寸草不生、荒无人烟。而现如今实现绿进沙退的历史性转变，少不了内蒙青年们与时俱进的科技头脑与坚定不移的治沙意志。<br>
@@ -81,98 +133,47 @@
 从“死亡之海”到绿色家园，一代代内蒙青年在治沙上注入科技创新，贡献青春力量，奏响壮阔乐章。<br>
 <img src="https://TheQuteGDH.github.io/post-images/1697937853452.webp" alt="" loading="lazy"></p>
 <p>以上就是我们合力找的新闻，如果你有其他想说的，加我V或Q<br>
-Wechat：GDHWechat1225<br>
-QQ:3604047068</p>
-</div>
-                              <div class="mdui-divider mdui-m-t-3"></div>
-                              <div class="mdui-row-xs-2 mdui-m-t-2">
-  <div class="mdui-col"> <div class="mdui-text-left"><a href="https://TheQuteGDH.github.io/post/yi-yu-yan-jian-jie-ji-xia-zai/">易语言简介及下载</a></div></div>
- <div class="mdui-col"><div class="mdui-text-right "><a href="https://TheQuteGDH.github.io/post/DI-YI-PIAN-WEN-ZHANG/">第一篇文章</a></div> </div>
-                                </div>
-                                <div class="mdui-divider mdui-m-t-2"></div>
-   
- <script src="https://TheQuteGDH.github.io/media/scripts/Valine.min.js"></script>
- <div class="comment"></div>
+Wechat：GDHWechat1225                       QQ:3604047068</p>
 
-<script>
-      new Valine({
-            el: '.comment',
-
-
-
-            path: window.location.pathname,
-            pageSize: 30,
-            avatar:'mm', 
-       })
-
-    </script> 
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
-                         </article>
-                 <div class="toc-container mdui-float-right">
-                
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://TheQuteGDH.github.io/post/DI-YI-PIAN-WEN-ZHANG/">
+                  <h3 class="post-title">
+                    第一篇文章
+                  </h3>
+                </a>
               </div>
+            
 
-                        </div>
-                 </div>
-          
+            
+
+          </div>
+
         </div>
-        <script data-no-instant>
-    (function ($) {
-        $.extend({
-            adamsOverload: function () {
-                $.viewImage({
-                    'target'  : '.post-neirong img',
-                    'exclude' : '.vsmile-icons img , .song-links-item img',
-                    'delay'   : 300
-                });
-            }
-        });
-    })(jQuery);
-    jQuery.adamsOverload();
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-        <footer class="footer mdui-m-t-5 mdui-text-center">
-               <nav class="social-links">
-                      <ul>
-                      
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                      </ul>
-                    </nav>
-                  <div class="copyright">
-                      <p>
-</p>
-                  </div>
-              </footer>
-    </body>
+
+
+
+
+
+
+  </body>
 </html>

@@ -1,52 +1,104 @@
+<!DOCTYPE html>
 <html>
-      <head>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
-        <meta charset="utf-8">
-        <meta name="referrer" content="never">
-        <title>第一篇文章 | GDH-OSのBlog</title>
-        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
-        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://TheQuteGDH.github.io/styles/main.css">
-          <script src="https://TheQuteGDH.github.io/media/scripts/mdui.min.js"></script>
-        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
-        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-        <script src="https://TheQuteGDH.github.io/media/scripts/script.js"></script>
-        <script >hljs.initHighlightingOnLoad();</script>
+  <head>
+    <meta charset="utf-8" >
+
+<title>第一篇文章 | GDH-OSのBlog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://TheQuteGDH.github.io/favicon.ico?v=1699149626928">
+<link rel="stylesheet" href="https://TheQuteGDH.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="嗨，我是GDH-OS，这是我搞的第一个博客，花了很长时间去搭建的
+采用的是Github+Gridea搭建的，搭建方法
+1、首先注册一个Github账号（要用科技，不然上不去）
+这里的加速器我推荐用Watt Toolkit，这是官网：http..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://TheQuteGDH.github.io">
+        <img src="https://TheQuteGDH.github.io/images/avatar.png?v=1699149626928" class="site-logo">
+        <h1 class="site-title">GDH-OSのBlog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      青，取之于蓝而青于蓝；冰，水为之而寒于水。
+    </div>
+    <div class="site-footer">
+      
+ | <a class="rss" href="https://TheQuteGDH.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    </head>
-    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
-        <header class="index-img mdui-m-b-3" >
-                          <button class="mdui-btn  mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
-                <ul class="mdui-menu" id="demo-attr-cascade">
-                
-                        <li class="mdui-menu-item">
-                          <a href="/" class="mdui-ripple">首页</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/archives" class="mdui-ripple">归档</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/tags" class="mdui-ripple">标签</a>
-                        </li>
-                
-                        <li class="mdui-menu-item">
-                          <a href="/post/about" class="mdui-ripple">关于</a>
-                        </li>
-                
-                      </ul>
 
-        </header>
-        <div class="mdui-container post">
-                <div class="mdui-row">
-                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
-                         <article class="mdui-shadow-10 mdui-p-a-2 post-list">
-                           <div class="mdui-typo-display-1 mdui-m-b-3">第一篇文章</div>
-                           <a  class="index-list-biaoqian ">2023-10-22</a>
-                           <div class="mdui-typo mdui-m-t-3 post-neirong"><p>嗨，我是GDH-OS，这是我搞的第一个博客，花了很长时间去搭建的<br>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">第一篇文章</h2>
+            <div class="post-date">2023-10-22</div>
+            
+            <div class="post-content" v-pre>
+              <p>嗨，我是GDH-OS，这是我搞的第一个博客，花了很长时间去搭建的<br>
 采用的是Github+Gridea搭建的，搭建方法<br>
 1、首先注册一个Github账号（要用科技，不然上不去）<br>
 这里的加速器我推荐用Watt Toolkit，这是官网：https://steampp.net/（steam也能加速）<br>
@@ -63,96 +115,37 @@ TIPS2:如果你发现你修改完后你的Blog没有变化，请刷新DNS缓存�
 Win+R运行，输入CMD，回车打开命令提示符，输入ipconfig /flushdns，回车就可以了（注意：一定要点同步在刷新）<br>
 至此，博客搭建完成了，希望大家都能有一个属于自己的BLOG<br>
 展示一下自己的成果：TheQuteGDH.Github.io</p>
-</div>
-                              <div class="mdui-divider mdui-m-t-3"></div>
-                              <div class="mdui-row-xs-2 mdui-m-t-2">
-  <div class="mdui-col"> <div class="mdui-text-left"><a href="https://TheQuteGDH.github.io/post/xx-chu-ban-she-bao-zhi-zhi-zuo/">XX出版社报纸制作</a></div></div>
- <div class="mdui-col"></div>
-                                </div>
-                                <div class="mdui-divider mdui-m-t-2"></div>
-   
- <script src="https://TheQuteGDH.github.io/media/scripts/Valine.min.js"></script>
- <div class="comment"></div>
 
-<script>
-      new Valine({
-            el: '.comment',
+            </div>
+            
+            
 
+            
 
+          </div>
 
-            path: window.location.pathname,
-            pageSize: 30,
-            avatar:'mm', 
-       })
-
-    </script> 
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
-</script>
-                         </article>
-                 <div class="toc-container mdui-float-right">
-                
-              </div>
-
-                        </div>
-                 </div>
-          
         </div>
-        <script data-no-instant>
-    (function ($) {
-        $.extend({
-            adamsOverload: function () {
-                $.viewImage({
-                    'target'  : '.post-neirong img',
-                    'exclude' : '.vsmile-icons img , .song-links-item img',
-                    'delay'   : 300
-                });
-            }
-        });
-    })(jQuery);
-    jQuery.adamsOverload();
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
-        <footer class="footer mdui-m-t-5 mdui-text-center">
-               <nav class="social-links">
-                      <ul>
-                      
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                      </ul>
-                    </nav>
-                  <div class="copyright">
-                      <p>
-</p>
-                  </div>
-              </footer>
-    </body>
+
+
+
+
+
+
+  </body>
 </html>
